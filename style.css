@@ -1,0 +1,91 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.search-bar {
+    background-color: rgba(32, 35, 35, 0.618);
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 20px;
+    width: 550px;
+    outline: none;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.install-app-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.install-app-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.profile-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #3b3b3b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+div.outer{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(15,1fr);
+    background-color: rgb(20, 19, 19);
+    height: 100%;
+    width: 100%;
+}
+.inner-left{
+    grid-area: 2/1/16/3;
+    background-color: rgba(32, 35, 35, 0.618);
+    border-radius: 20px;
+    margin: 10px;
+}
+.inner-middle{
+    grid-area: 2/3/16/9;
+    background-color:rgba(32, 35, 35, 0.618);
+    border-radius: 20px;
+    margin: 10px;
+    margin-left: 0px;
+}
+
+.navbar{
+    grid-area: 1/1/2/9;
+}
