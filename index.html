@@ -4,23 +4,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minimus</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
     <div class="outer">
-        <div class="navbar">
-            <div class="navbar-left">
-                <img src="spotify-logo.png" alt="Logo" class="logo">
-                <input type="text" class="search-bar" placeholder="What do you want to play?">
-            </div>
-            <div class="navbar-right">
-                <button class="install-app-btn">Install App</button>
-                <div class="profile-icon">D</div>
-            </div>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-box">T</span>
+            <span>TV TIME</span>
         </div>
+
+            <!-- Shows Dropdown -->
+<div class="dropdown" id="showsDropdown">
+    <a href="javascript:void(0)" class="dropdown-toggle" id="showsButton">Shows</a>
+    <div class="dropdown-content">
+      <a href="#">Popular Shows</a>
+      <a href="#">New Releases</a>
+      <a href="#">Top Rated</a>
+    </div>
+  </div>
+  
+  <!-- Movies Dropdown -->
+  <div class="dropdown" id="moviesDropdown">
+    <a href="javascript:void(0)" class="dropdown-toggle" id="moviesButton">Movies</a>
+    <div class="dropdown-content">
+      <a href="#">Popular Movies</a>
+      <a href="#">Upcoming</a>
+      <a href="#">Award Winners</a>
+    </div>
+  </div>
+  
+  <!-- Genres Dropdown -->
+  <div class="dropdown" id="genresDropdown">
+    <a href="javascript:void(0)" class="dropdown-toggle" id="genresButton">Genres</a>
+    <div class="dropdown-content">
+      <a href="#">Action</a>
+      <a href="#">Drama</a>
+      <a href="#">Comedy</a>
+      <a href="#">Thriller</a>
+    </div>
+  </div>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search titles">
+        </div>
+        <div class="auth-links">
+            <a href="signin.html" id="login">Log in</a>
+            <span>|</span>
+            <a href="signup.html" id="signup">Sign up</a>
+        </div>
+    </nav>
+        <!-- </div> -->
+
         <div class="inner-left"></div>
         <div class="inner-right"></div>
         <div class="inner-top"></div>
         <div class="inner-middle"></div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
