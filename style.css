@@ -22,7 +22,7 @@
 }
 
 .logo-box {
-    background-color: #FFD700; /* Yellow box for 'T' */
+    background-color: rgb(224, 97, 186); /* Yellow box for 'T' */
     color: rgb(20, 19, 19);
     padding: 5px 10px;
     margin-right: 5px;
@@ -84,7 +84,7 @@
 }
 
 .search-bar input:focus {
-=======
+
     padding: 12px 15px;
     border-radius: 20px;
     width: 400px;
@@ -120,13 +120,13 @@ div.outer{
     width: 100%;
 }
 .inner-left{
-    grid-area: 2/1/16/3;
+    grid-area: 2/1/16/6;
     background-color: rgba(32, 35, 35, 0.618);
     border-radius: 20px;
     margin: 10px;
 }
 .inner-middle{
-    grid-area: 2/3/16/9;
+    grid-area: 2/6/16/9;
     background-color:rgba(32, 35, 35, 0.618);
     border-radius: 20px;
     margin: 10px;
@@ -137,8 +137,6 @@ div.outer{
     grid-area: 1/1/2/9;
 }
 
-
-=======
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -211,3 +209,7 @@ body {
     background-color: #FFD700;
 }
 
+.shows,.movies,.genres{
+  text-decoration: none;
+  color: white;
+}
