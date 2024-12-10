@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+        }
+        .movie-card {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height: 800px;
+            display: grid;
+            place-items: center;
+        }
+        .movie-card:hover {
+            transform: scale(1.05);
+        }
+        .movie-icon {
+            width: 25%;
+            height: auto;
+            border-radius: 50px;
+        }
+        .movie-details {
+            margin-top: 15px;
+            color: #333;
+        }
+        .movie-details h2 {
+            font-size: 1.5em;
+            margin: 0 0 10px 0;
+            text-align: center;
+        }
+        .movie-details p {
+            margin: 5px 0;
+            font-size: 1em;
+            text-align: center;
+        }
+        .genre {
+            color: #007BFF;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .episode-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .episode-item {
+            background-color: #e0f7fa;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .episode-item:hover {
+            background-color: #b2ebf2;
+        }
+
+        .episode-number {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #00796b;
+        }
+
+        .episode-title {
+            font-size: 1.1em;
+            color: #00796b;
+        }
+
+        .episode-date {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .episode-details {
+            text-align: right;
+            font-size: 0.9em;
+            color: #00796b;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="movie-card">
+        <img src="master.jpg" alt="Movie Icon" class="movie-icon">
+        <div class="movie-details">
+            <h2>MASTER CHEF INDIA</h2>
+            <p><strong>Artist:</strong> MasterChef India primarily features chefs and culinary experts as judges and hosts. Some of the notable personalities associated with the show include:
+                1.	Vikas Khanna - A globally acclaimed Michelin-starred chef, author, and restaurateur.
+                2.	Ranveer Brar - A renowned celebrity chef, food stylist, and TV personality known for his expertise in Indian and global cuisines.
+                3.	Garima Arora - The first Indian woman to receive a Michelin star, known for her innovative culinary techniques.
+                4.	Kunal Kapur - A celebrated chef and TV presenter with expertise in Indian cuisine (featured in earlier seasons).
+                5.	Zorawar Kalra - A restaurateur and food entrepreneur, adding a business perspective to the show.
+            
+            Each season features talented home cooks from across India competing in intense culinary challenges under the guidance and critique of these judges.</p>
+            <p><strong>Genre:</strong> <span class="genre">Culinary arts Show</span></p>
+            <p><strong>Description:</strong> MasterChef India is a competitive cooking reality show that showcases the culinary talents of aspiring home cooks from across the country. Contestants compete in a series of challenges, ranging from innovative cooking tasks to replicating complex dishes, all judged by a panel of esteemed chefs. The show highlights creativity, technique, and passion for food, while also celebrating diverse Indian and global cuisines. With its intense competition and inspiring stories, MasterChef India provides a platform for talented cooks to achieve their culinary dreams and gain nationwide recognition. It has become a beloved series for food enthusiasts and viewers alike.</p>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Episode History of The Show</h1>
+        <ul class="episode-list">
+            <li class="episode-item">
+                <div>
+                    <span class="episode-number">Episode 1</span>
+                    <p class="episode-title">The Beginning of an Adventure</p>
+                </div>
+                <div class="episode-details">
+                    <p class="episode-date">January 1, 2024</p>
+                </div>
+            </li>
+            <li class="episode-item">
+                <div>
+                    <span class="episode-number">Episode 2</span>
+                    <p class="episode-title">The First Challenge</p>
+                </div>
+                <div class="episode-details">
+                    <p class="episode-date">January 8, 2024</p>
+                </div>
+            </li>
+            <li class="episode-item">
+                <div>
+                    <span class="episode-number">Episode 3</span>
+                    <p class="episode-title">The Unexpected Twist</p>
+                </div>
+                <div class="episode-details">
+                    <p class="episode-date">January 15, 2024</p>
+                </div>
+            </li>
+            <li class="episode-item">
+                <div>
+                    <span class="episode-number">Episode 4</span>
+                    <p class="episode-title">The Mystery Unveiled</p>
+                </div>
+                <div class="episode-details">
+                    <p class="episode-date">January 22, 2024</p>
+                </div>
+            </li>
+            <li class="episode-item">
+                <div>
+                    <span class="episode-number">Episode 5</span>
+                    <p class="episode-title">The Final Confrontation</p>
+                </div>
+                <div class="episode-details">
+                    <p class="episode-date">January 29, 2024</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

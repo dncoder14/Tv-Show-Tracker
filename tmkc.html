@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+        }
+        .movie-card {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height: 700px;
+            display: grid;
+            place-items: center;
+        }
+        .movie-card:hover {
+            transform: scale(1.05);
+        }
+        .movie-icon {
+            width: 25%;
+            height: auto;
+            border-radius: 50px;
+        }
+        .movie-details {
+            margin-top: 15px;
+            color: #333;
+        }
+        .movie-details h2 {
+            font-size: 1.5em;
+            margin: 0 0 10px 0;
+            text-align: center;
+        }
+        .movie-details p {
+            margin: 5px 0;
+            font-size: 1em;
+            text-align: center;
+        }
+        .genre {
+            color: #007BFF;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .episode-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .episode-item {
+            background-color: #e0f7fa;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .episode-item:hover {
+            background-color: #b2ebf2;
+        }
+
+        .episode-number {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #00796b;
+        }
+
+        .episode-title {
+            font-size: 1.1em;
+            color: #00796b;
+        }
+
+        .episode-date {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .episode-details {
+            text-align: right;
+            font-size: 0.9em;
+            color: #00796b;
+        }
+    </style>
+</head>
+<body>
+    <div class="movie-card">
+        <img src="tmk.jpg" alt="Movie Icon" class="movie-icon">
+        <div class="movie-details">
+            <h2>TARAK MEHTA KA OOLTAH CHASMA</h2>
+            <p><strong>Artist:</strong>Dilip Joshi as Jethalal Champaklal Gada,
+                Amit Bhatt as Champaklal Jayantilal Gada (Jethalal's father),
+                Shailesh Lodha (former) / Sachin Shroff (current) as Taarak Mehta,
+                Disha Vakani (on hiatus) / Nehha Mehta (rumored replacement) as Daya Jethalal Gada,
+                Munmun Dutta as Babita Iyer,
+                Tanuj Mahashabde as Krishnan Subramaniam Iyer,
+                Mandar Chandwadkar as Aatmaram Tukaram Bhide,
+                Sonalika Joshi as Madhavi Bhide,
+                Balvinder Singh Suri as Roshan Singh Sodhi,
+                Jennifer Mistry Bansiwal as Roshan Kaur Sodhi,
+                Gurucharan Singh (former) / Laad Singh Maan (current) as Sodhi.
+                </p>
+            <p><strong>Genre:</strong> <span class="genre">Comedy Show</span></p>
+            <p><strong>Description:</strong> Taarak Mehta Ka Ooltah Chashmah (TMKOC) is a popular Indian sitcom that highlights the everyday lives of the residents of Gokuldham Society. Known for its humor and social messages, the show revolves around relatable issues faced by families, with a comedic twist. Central to the story is Jethalal, a lovable yet clumsy businessman, and his interactions with friends and neighbors. The show promotes unity, cultural diversity, and positivity while delivering hearty laughter. TMKOC has been entertaining audiences since 2008, making it one of India’s longest-running sitcoms.!</p>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Episode History of The Show</h1>
+        <ul class="episode-list">
+            <li class="episode-item">
+                <div>
+                    <span class="episode-number">Episode 1</span>
+                    <p class="episode-title">The Beginning of an Adventure</p>
+                </div>
+                <div class="episode-details">
+                    <p class="episode-date">January 1, 2024</p>
+                </div>
+            </li>
+            <li class="episode-item">
+                <div>
+                    <span class="episode-number">Episode 2</span>
+                    <p class="episode-title">The First Challenge</p>
+                </div>
+                <div class="episode-details">
+                    <p class="episode-date">January 8, 2024</p>
+                </div>
+            </li>
+            <li class="episode-item">
+                <div>
+                    <span class="episode-number">Episode 3</span>
+                    <p class="episode-title">The Unexpected Twist</p>
+                </div>
+                <div class="episode-details">
+                    <p class="episode-date">January 15, 2024</p>
+                </div>
+            </li>
+            <li class="episode-item">
+                <div>
+                    <span class="episode-number">Episode 4</span>
+                    <p class="episode-title">The Mystery Unveiled</p>
+                </div>
+                <div class="episode-details">
+                    <p class="episode-date">January 22, 2024</p>
+                </div>
+            </li>
+            <li class="episode-item">
+                <div>
+                    <span class="episode-number">Episode 5</span>
+                    <p class="episode-title">The Final Confrontation</p>
+                </div>
+                <div class="episode-details">
+                    <p class="episode-date">January 29, 2024</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

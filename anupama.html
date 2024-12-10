@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+        }
+        .movie-card {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height: 800px;
+            display: grid;
+            place-items: center;
+        }
+        .movie-card:hover {
+            transform: scale(1.05);
+        }
+        .movie-icon {
+            width: 25%;
+            height: auto;
+            border-radius: 50px;
+        }
+        .movie-details {
+            margin-top: 15px;
+            color: #333;
+        }
+        .movie-details h2 {
+            font-size: 1.5em;
+            margin: 0 0 10px 0;
+            text-align: center;
+        }
+        .movie-details p {
+            margin: 5px 0;
+            font-size: 1em;
+            text-align: center;
+        }
+        .genre {
+            color: #007BFF;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .episode-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .episode-item {
+            background-color: #e0f7fa;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .episode-item:hover {
+            background-color: #b2ebf2;
+        }
+
+        .episode-number {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #00796b;
+        }
+
+        .episode-title {
+            font-size: 1.1em;
+            color: #00796b;
+        }
+
+        .episode-date {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .episode-details {
+            text-align: right;
+            font-size: 0.9em;
+            color: #00796b;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="movie-card">
+        <img src="anup.jpg" alt="Movie Icon" class="movie-icon">
+        <div class="movie-details">
+            <h2>ANUPAMAA</h2>
+            <p><strong>Artist:</strong> The main cast of the popular TV show Anupamaa includes:
+                1.	Rupali Ganguly as Anupamaa Shah/Anupamaa Kapadia - The protagonist, a devoted mother and wife who embarks on a journey of self-discovery.
+                2.	Gaurav Khanna as Anuj Kapadia - Anupamaa’s supportive second husband and a successful businessman.
+                3.	Sudhanshu Pandey as Vanraj Shah - Anupamaa’s ex-husband, whose actions often cause family drama.
+                4.	Madalsa Sharma as Kavya Shah - Vanraj’s second wife, navigating her complex relationship with him and the family.
+                5.	Paras Kalnawat (formerly) and Sagar Parekh as Samar Shah - Anupamaa’s youngest son, deeply supportive of his mother.
+            
+            The show also features talented supporting actors who bring the Shah and Kapadia families to life.</p>
+            <p><strong>Genre:</strong> <span class="genre">Family Show</span></p>
+            <p><strong>Description:</strong> Anupamaa is a popular Indian television drama that follows the journey of Anupamaa Shah, a dedicated homemaker who sacrifices her dreams and ambitions for her family. Despite her selfless love and efforts, she often faces disrespect and underappreciation, especially from her husband, Vanraj. After discovering his betrayal, Anupamaa decides to reclaim her identity and independence. The show explores her challenges, personal growth, and relationships, including her bond with Anuj Kapadia, a businessman who values and supports her. Known for its empowering narrative and emotional depth, Anupamaa resonates with audiences by highlighting themes of self-respect, resilience, and family dynamics.</p>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Episode History of The Show</h1>
+        <ul class="episode-list">
+            <li class="episode-item">
+                <div>
+                    <span class="episode-number">Episode 1</span>
+                    <p class="episode-title">The Beginning of an Adventure</p>
+                </div>
+                <div class="episode-details">
+                    <p class="episode-date">January 1, 2024</p>
+                </div>
+            </li>
+            <li class="episode-item">
+                <div>
+                    <span class="episode-number">Episode 2</span>
+                    <p class="episode-title">The First Challenge</p>
+                </div>
+                <div class="episode-details">
+                    <p class="episode-date">January 8, 2024</p>
+                </div>
+            </li>
+            <li class="episode-item">
+                <div>
+                    <span class="episode-number">Episode 3</span>
+                    <p class="episode-title">The Unexpected Twist</p>
+                </div>
+                <div class="episode-details">
+                    <p class="episode-date">January 15, 2024</p>
+                </div>
+            </li>
+            <li class="episode-item">
+                <div>
+                    <span class="episode-number">Episode 4</span>
+                    <p class="episode-title">The Mystery Unveiled</p>
+                </div>
+                <div class="episode-details">
+                    <p class="episode-date">January 22, 2024</p>
+                </div>
+            </li>
+            <li class="episode-item">
+                <div>
+                    <span class="episode-number">Episode 5</span>
+                    <p class="episode-title">The Final Confrontation</p>
+                </div>
+                <div class="episode-details">
+                    <p class="episode-date">January 29, 2024</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>
