@@ -5,13 +5,26 @@
     <title>Minimus</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+  <style>
+    .carousel-item {
+      text-align: center;
+    }
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
     <div class="outer">
     <nav class="navbar">
         <div class="logo">
-            <h1><span class="logo-box">M</span>
-            <span>MINIMUS</span></h1>
+            <span class="logo-box">M</span>
+            <span>MINIMUS</span>
         </div>
 
             <!-- Shows Dropdown -->
@@ -48,42 +61,98 @@
             <input type="text" id="search" placeholder="Search titles">
         </div>
         <div class="auth-links">
-           <h3> <a href="signin.html" id="login">Log in</a>
+           <a href="signin.html" id="login">Log in</a>
             <span>|</span>
-            <a href="signup.html" id="signup">Sign up</a></h3>
+            <a href="signup.html" id="signup">Sign up</a>
         </div>
     </nav>
+
+    <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+  
+      <!-- Carousel Items -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <video class="d-block w-100" controls>
+            <source src="video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="carousel-caption">
+            <h5>Video 1 Title</h5>
+            <p>Description for video 1.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <video class="d-block w-100" controls>
+            <source src="video2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="carousel-caption">
+            <h5>Video 2 Title</h5>
+            <p>Description for video 2.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <video class="d-block w-100" controls>
+            <source src="video3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="carousel-caption">
+            <h5>Video 3 Title</h5>
+            <p>Description for video 3.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- </div> -->
 
         <div class="inner-left">
             <div class="carousel-container">
                 <h2>Trending Shows</h2>
                 <div class="carousel" id="shows-carousel">
-                  <div class="carousel-item">
+                  <div class="carousel-item-i">
                     <img src="Lucky_Baskhar_film_poster.jpg" alt="Corrida das Blogueiras">
                     <p style="color:white">Lucky bhaskar </p>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item-i">
                     <img src="MV5BZjRmMzA2MWYtZGEyMS00YjY4LWJiOTEtNjU1NWMyYTRjM2M3XkEyXkFqcGc@._V1_.jpg" alt="Star Academy">
                     <p style="color:white">Do patti</p>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item-i">
                     <img src="Animal_(2023_film)_poster.jpg" alt="Disventure Camp">
                     <p style="color:white">Animal</p>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item-i">
                     <img src="EN_IN_TGIKS_S2_GOLF_CART_1x1_sRGB__2___1_.jpg" alt="RuPaul's Drag Race">
                     <p>RuPaul's Drag Race</p>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item-i">
                     <img src="MV5BYzZhNWEzNTktMDA1YS00ZmYyLTkwNjgtYTJiMmU2YjZiYjBhXkEyXkFqcGc@._V1_.jpg" alt="Frenchie Shore">
                     <p>Frenchie Shore</p>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item-i">
                     <img src="MV5BYzZhNWEzNTktMDA1YS00ZmYyLTkwNjgtYTJiMmU2YjZiYjBhXkEyXkFqcGc@._V1_.jpg" alt="Frenchie Shore">
                     <p>Frenchie Shore</p>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item-i">
                     <img src="MV5BYzZhNWEzNTktMDA1YS00ZmYyLTkwNjgtYTJiMmU2YjZiYjBhXkEyXkFqcGc@._V1_.jpg" alt="Frenchie Shore">
                     <p>Frenchie Shore</p>
                   </div>
@@ -91,31 +160,32 @@
             
                 <h2>Trending Movies</h2>
                 <div class="carousel" id="movies-carousel">
-                  <div class="carousel-item">
-                    <img src="1_o_8V5iLL3XEzmvtDOeV6bQ.jpg" alt="A Nonsense Christmas">
+                  <div class="carousel-item-i">
+                    <img src="kbc.png" alt="A Nonsense Christmas">
                     <p>A Nonsense Christmas</p>
                   </div>
-                  <div class="carousel-item">
-                    <img src="20231025-The-New-Squid-Game-Trailer-Is-Out-Feature.webp" alt="Wicked">
+                  <div class="carousel-item-i">
+                    <a href=" https://www.hotstar.com/in/shows/yeh-rishta/586/watch?fallbackEpisodeId=1000012211
+                    " target="iframe-section"><img src="tmkoc.png" alt="TMKOC"></a>
                     <p>Wicked</p>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item-i">
                     <img src="AAAAQcaKJf9yxSzIpqGr8rs1anDeXKlXnQkR900QmgC-7cZyIXeG1CYiQa-BW6mIGAwbJEEpn_9XZzmjmQX3bYfWyNz8QOG7ciIrZhmHs5NGuAoP7WI0LjnjQ6qLpBGisCyJ3lXmki92IztJdYHSDNa9zwPV.jpg" alt="That Christmas">
                     <p>That Christmas</p>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item-i">
                     <img src="Berlin.jpg" alt="Moana 2">
                     <p>Moana 2</p>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item-i">
                     <img src="MV5BZjkxZWJiNTUtYjQwYS00MTBlLTgwODQtM2FkNWMyMjMwOGZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Gladiator II">
                     <p>Gladiator II</p>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item-i">
                     <img src="MV5BZjkxZWJiNTUtYjQwYS00MTBlLTgwODQtM2FkNWMyMjMwOGZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Gladiator II">
                     <p>Gladiator II</p>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item-i">
                     <img src="MV5BZjkxZWJiNTUtYjQwYS00MTBlLTgwODQtM2FkNWMyMjMwOGZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Gladiator II">
                     <p>Gladiator II</p>
                   </div>
@@ -126,11 +196,12 @@
         </div>
         <div class="inner-right"></div>
         <div class="inner-top"></div>
-        <div class="inner-middle"></div>
+        <div class="inner-middle"><iframe id="iframe-section" name="iframe-section" src="" frameborder="0"></iframe></div>
     </div>
 
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
 
+    <div class="foot">
     <footer class="footer">
         <div class="footer-section">
             <div class="logo">
@@ -181,6 +252,7 @@
             </div>
         </div>
     </footer>
+  </div>
 
     <div style="padding-bottom: 20px;padding-top: 20px;" class="copyright">
         © 2024, TV Time, a Whip Media Company
