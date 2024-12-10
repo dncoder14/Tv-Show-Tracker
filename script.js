@@ -105,17 +105,17 @@ if (genresButton) {
   });
 
 
-    function showMovieInfo(title, year, director, description) {
-      document.getElementById('movieTitle').textContent = title;
-      document.getElementById('movieYear').textContent = year;
-      document.getElementById('movieDirector').textContent = director;
-      document.getElementById('movieDescription').textContent = description;
+    // function showMovieInfo(title, year, director, description) {
+    //   document.getElementById('movieTitle').textContent = title;
+    //   document.getElementById('movieYear').textContent = year;
+    //   document.getElementById('movieDirector').textContent = director;
+    //   document.getElementById('movieDescription').textContent = description;
       
-      // Open the side box
-      document.getElementById('sideBox').classList.add('open');
-    }
+    //   Open the side box
+    //   document.getElementById('sideBox').classList.add('open');
+    // }
 
-    function closeSideBox() {
-      document.getElementById('sideBox').classList.remove('open');
-    }
+    // function closeSideBox() {
+    //   document.getElementById('sideBox').classList.remove('open');
+    // }
   
