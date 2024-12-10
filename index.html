@@ -31,21 +31,21 @@
 <div class="dropdown" id="showsDropdown">
     <a href="javascript:void(0)" class="dropdown-toggle shows" id="showsButton">Shows</a>
     <div class="dropdown-content">
-      <a href="#">Popular Shows</a>
-      <a href="#">New Releases</a>
-      <a href="#">Top Rated</a>
+      <a href="#popular-shows">Popular Shows</a>
+      <a href="#trending-shows">Trending Shows</a>
+      <a href="#top-rated">Top Rated</a>
     </div>
   </div>
   
   <!-- Movies Dropdown -->
-  <div class="dropdown" id="moviesDropdown">
+  <!-- <div class="dropdown" id="moviesDropdown">
     <a href="javascript:void(0)" class="dropdown-toggle movies" id="moviesButton">Movies</a>
     <div class="dropdown-content">
       <a href="#">Popular Movies</a>
       <a href="#">Upcoming</a>
       <a href="#">Award Winners</a>
     </div>
-  </div>
+  </div> -->
   
   <!-- Genres Dropdown -->
   <div class="dropdown" id="genresDropdown">
@@ -126,7 +126,7 @@
 
         <div class="inner-left">
             <div class="carousel-container">
-                <h2>Trending Shows</h2>
+                <h2 id="trending-shows">Trending Shows</h2>
                 <div class="carousel" id="shows-carousel">
                   <div class="carousel-item-i">
                     <img src="Lucky_Baskhar_film_poster.jpg" alt="Corrida das Blogueiras">
@@ -158,7 +158,181 @@
                   </div>
                 </div>
             
-                <h2>Trending Movies</h2>
+                <h2 id="popular-shows">Popular Shows</h2>
+                <div class="carousel" id="movies-carousel">
+                  <div class="carousel-item-i movie" onclick="showMovieInfo('Inception', '2010', 'Christopher Nolan', 'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea.')">
+                    <!-- <div onclick="showMovieInfo('Inception', '2010', 'Christopher Nolan', 'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea.')"> -->
+                    <img src="kbc.png" alt="A Nonsense Christmas">
+                    <p>A Nonsense Christmas</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <a href=" https://www.hotstar.com/in/shows/yeh-rishta/586/watch?fallbackEpisodeId=1000012211
+                    " target="iframe-section"><img src="tmkoc.png" alt="TMKOC"></a>
+                    <p>Wicked</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <img src="AAAAQcaKJf9yxSzIpqGr8rs1anDeXKlXnQkR900QmgC-7cZyIXeG1CYiQa-BW6mIGAwbJEEpn_9XZzmjmQX3bYfWyNz8QOG7ciIrZhmHs5NGuAoP7WI0LjnjQ6qLpBGisCyJ3lXmki92IztJdYHSDNa9zwPV.jpg" alt="That Christmas">
+                    <p>That Christmas</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <img src="Berlin.jpg" alt="Moana 2">
+                    <p>Moana 2</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <img src="MV5BZjkxZWJiNTUtYjQwYS00MTBlLTgwODQtM2FkNWMyMjMwOGZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Gladiator II">
+                    <p>Gladiator II</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <img src="MV5BZjkxZWJiNTUtYjQwYS00MTBlLTgwODQtM2FkNWMyMjMwOGZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Gladiator II">
+                    <p>Gladiator II</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <img src="MV5BZjkxZWJiNTUtYjQwYS00MTBlLTgwODQtM2FkNWMyMjMwOGZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Gladiator II">
+                    <p>Gladiator II</p>
+                  </div>
+                </div>
+
+                <h2 id="popular-shows">Popular Shows</h2>
+                <div class="carousel" id="movies-carousel">
+                  <div class="carousel-item-i movie" onclick="showMovieInfo('Inception', '2010', 'Christopher Nolan', 'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea.')">
+                    <!-- <div onclick="showMovieInfo('Inception', '2010', 'Christopher Nolan', 'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea.')"> -->
+                    <img src="kbc.png" alt="A Nonsense Christmas">
+                    <p>A Nonsense Christmas</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <a href=" https://www.hotstar.com/in/shows/yeh-rishta/586/watch?fallbackEpisodeId=1000012211
+                    " target="iframe-section"><img src="tmkoc.png" alt="TMKOC"></a>
+                    <p>Wicked</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <img src="AAAAQcaKJf9yxSzIpqGr8rs1anDeXKlXnQkR900QmgC-7cZyIXeG1CYiQa-BW6mIGAwbJEEpn_9XZzmjmQX3bYfWyNz8QOG7ciIrZhmHs5NGuAoP7WI0LjnjQ6qLpBGisCyJ3lXmki92IztJdYHSDNa9zwPV.jpg" alt="That Christmas">
+                    <p>That Christmas</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <img src="Berlin.jpg" alt="Moana 2">
+                    <p>Moana 2</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <img src="MV5BZjkxZWJiNTUtYjQwYS00MTBlLTgwODQtM2FkNWMyMjMwOGZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Gladiator II">
+                    <p>Gladiator II</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <img src="MV5BZjkxZWJiNTUtYjQwYS00MTBlLTgwODQtM2FkNWMyMjMwOGZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Gladiator II">
+                    <p>Gladiator II</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <img src="MV5BZjkxZWJiNTUtYjQwYS00MTBlLTgwODQtM2FkNWMyMjMwOGZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Gladiator II">
+                    <p>Gladiator II</p>
+                  </div>
+                  
+                </div>
+
+                <h2 id="popular-shows">Popular Shows</h2>
+                <div class="carousel" id="movies-carousel">
+                  <div class="carousel-item-i movie" onclick="showMovieInfo('Inception', '2010', 'Christopher Nolan', 'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea.')">
+                    <!-- <div onclick="showMovieInfo('Inception', '2010', 'Christopher Nolan', 'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea.')"> -->
+                    <img src="kbc.png" alt="A Nonsense Christmas">
+                    <p>A Nonsense Christmas</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <a href=" https://www.hotstar.com/in/shows/yeh-rishta/586/watch?fallbackEpisodeId=1000012211
+                    " target="iframe-section"><img src="tmkoc.png" alt="TMKOC"></a>
+                    <p>Wicked</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <img src="AAAAQcaKJf9yxSzIpqGr8rs1anDeXKlXnQkR900QmgC-7cZyIXeG1CYiQa-BW6mIGAwbJEEpn_9XZzmjmQX3bYfWyNz8QOG7ciIrZhmHs5NGuAoP7WI0LjnjQ6qLpBGisCyJ3lXmki92IztJdYHSDNa9zwPV.jpg" alt="That Christmas">
+                    <p>That Christmas</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <img src="Berlin.jpg" alt="Moana 2">
+                    <p>Moana 2</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <img src="MV5BZjkxZWJiNTUtYjQwYS00MTBlLTgwODQtM2FkNWMyMjMwOGZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Gladiator II">
+                    <p>Gladiator II</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <img src="MV5BZjkxZWJiNTUtYjQwYS00MTBlLTgwODQtM2FkNWMyMjMwOGZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Gladiator II">
+                    <p>Gladiator II</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <img src="MV5BZjkxZWJiNTUtYjQwYS00MTBlLTgwODQtM2FkNWMyMjMwOGZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Gladiator II">
+                    <p>Gladiator II</p>
+                  </div>
+                  
+                </div>
+
+                <h2 id="popular-shows">Popular Shows</h2>
+                <div class="carousel" id="movies-carousel">
+                  <div class="carousel-item-i movie" onclick="showMovieInfo('Inception', '2010', 'Christopher Nolan', 'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea.')">
+                    <!-- <div onclick="showMovieInfo('Inception', '2010', 'Christopher Nolan', 'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea.')"> -->
+                    <img src="kbc.png" alt="A Nonsense Christmas">
+                    <p>A Nonsense Christmas</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <a href=" https://www.hotstar.com/in/shows/yeh-rishta/586/watch?fallbackEpisodeId=1000012211
+                    " target="iframe-section"><img src="tmkoc.png" alt="TMKOC"></a>
+                    <p>Wicked</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <img src="AAAAQcaKJf9yxSzIpqGr8rs1anDeXKlXnQkR900QmgC-7cZyIXeG1CYiQa-BW6mIGAwbJEEpn_9XZzmjmQX3bYfWyNz8QOG7ciIrZhmHs5NGuAoP7WI0LjnjQ6qLpBGisCyJ3lXmki92IztJdYHSDNa9zwPV.jpg" alt="That Christmas">
+                    <p>That Christmas</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <img src="Berlin.jpg" alt="Moana 2">
+                    <p>Moana 2</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <img src="MV5BZjkxZWJiNTUtYjQwYS00MTBlLTgwODQtM2FkNWMyMjMwOGZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Gladiator II">
+                    <p>Gladiator II</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <img src="MV5BZjkxZWJiNTUtYjQwYS00MTBlLTgwODQtM2FkNWMyMjMwOGZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Gladiator II">
+                    <p>Gladiator II</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <img src="MV5BZjkxZWJiNTUtYjQwYS00MTBlLTgwODQtM2FkNWMyMjMwOGZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Gladiator II">
+                    <p>Gladiator II</p>
+                  </div>
+                  
+                </div>
+
+                <h2 id="popular-shows">Popular Shows</h2>
+                <div class="carousel" id="movies-carousel">
+                  <div class="carousel-item-i movie" onclick="showMovieInfo('Inception', '2010', 'Christopher Nolan', 'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea.')">
+                    <!-- <div onclick="showMovieInfo('Inception', '2010', 'Christopher Nolan', 'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea.')"> -->
+                    <img src="kbc.png" alt="A Nonsense Christmas">
+                    <p>A Nonsense Christmas</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <a href=" https://www.hotstar.com/in/shows/yeh-rishta/586/watch?fallbackEpisodeId=1000012211
+                    " target="iframe-section"><img src="tmkoc.png" alt="TMKOC"></a>
+                    <p>Wicked</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <img src="AAAAQcaKJf9yxSzIpqGr8rs1anDeXKlXnQkR900QmgC-7cZyIXeG1CYiQa-BW6mIGAwbJEEpn_9XZzmjmQX3bYfWyNz8QOG7ciIrZhmHs5NGuAoP7WI0LjnjQ6qLpBGisCyJ3lXmki92IztJdYHSDNa9zwPV.jpg" alt="That Christmas">
+                    <p>That Christmas</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <img src="Berlin.jpg" alt="Moana 2">
+                    <p>Moana 2</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <img src="MV5BZjkxZWJiNTUtYjQwYS00MTBlLTgwODQtM2FkNWMyMjMwOGZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Gladiator II">
+                    <p>Gladiator II</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <img src="MV5BZjkxZWJiNTUtYjQwYS00MTBlLTgwODQtM2FkNWMyMjMwOGZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Gladiator II">
+                    <p>Gladiator II</p>
+                  </div>
+                  <div class="carousel-item-i">
+                    <img src="MV5BZjkxZWJiNTUtYjQwYS00MTBlLTgwODQtM2FkNWMyMjMwOGZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Gladiator II">
+                    <p>Gladiator II</p>
+                  </div>
+                  
+                </div>
+
+                <h2 id="top-rated">Top Rated</h2>
                 <div class="carousel" id="movies-carousel">
                   <div class="carousel-item-i movie" onclick="showMovieInfo('Inception', '2010', 'Christopher Nolan', 'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea.')">
                     <!-- <div onclick="showMovieInfo('Inception', '2010', 'Christopher Nolan', 'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea.')"> -->
@@ -208,7 +382,7 @@
             <div class="logo">
                 <img src="logo.png" alt="Logo" width="50">
             </div>
-            <div class="language-select">
+            <!-- <div class="language-select">
                 <label for="language">Language: </label>
                 <select id="language">
                     <option value="en">English</option>
@@ -220,9 +394,9 @@
                     <option value="en">Japanese</option>
                     <option value="en">Bhojpuri</option>
                     <option value="en">Punjabi</option>
-                    <!-- Add more languages as needed -->
+                    Add more languages as needed
                 </select>
-            </div>
+            </div> -->
         </div>
         <div id="sideBox">
           <span id="closeBox" onclick="closeSideBox()">&#x2715;</span>
